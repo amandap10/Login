@@ -11,21 +11,21 @@ const Login = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        console.log("Envio");
+        console.log("Envio " + username + " " + password);
     }
 
   return (
     <div className='container'>
       <form onSubmit={handleSubmit}>
-        <h1>Acesse o Sistema</h1>
-        <div>
+        <h2>Acesse o Sistema</h2>
+        <div className="container-one">
             <FaUser className="icon"/>
             {/* Função "onChange" vai captar os dados preenchidos dos usuários a partir do momento que for inserido e enviado */}
             <input type="email" placeholder='E-mail'
             onChange={(e) => setUsername(e.target.value)}
             />
         </div>
-        <div>
+        <div className="container-one">
             <FaLock className="icon"/>
             <input type="password" placeholder='Senha' 
             onChange={(e) => setPassword(e.target.value)}

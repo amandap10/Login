@@ -4,3 +4,24 @@
   font-family: Helvetica;
   box-sizing: border-box;
 }
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(rgba(128, 68, 109, 1), rgba(74, 58, 105, 1));
+}
+
+h2 {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px
+}
+
+.container-one {
+  display: flex;
+  justify-content: center;
+}
