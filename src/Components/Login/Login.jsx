@@ -1,6 +1,8 @@
 import { FaUser, FaLock } from "react-icons/fa"
 import { useState } from "react"
 import './Login.css'
+import logo from '../../assets/logo.jpg'
+import icon from '../../assets/google.png'
 
 
 const Login = () => {
@@ -18,7 +20,9 @@ const Login = () => {
     <>
     <div className='container'>
       <form onSubmit={handleSubmit}>
-        <h2>Acesse o Sistema</h2>
+        <div className="container-logo">
+          <img className="logo" src={logo} alt="Logo da empresa" />
+        </div>
         <div className="container-form">
           <div className="container-one">
               <FaUser className="icon"/>
@@ -50,7 +54,9 @@ const Login = () => {
         <div className="signup-link">
             <p>Não tem uma conta? <a href="#">Registrar</a></p>
             <p>ou</p>
-            <p></p>
+            <div className="icon-google">
+              <img src={icon} alt="Logo Google" />
+            </div>
         </div>
       </form>
       
