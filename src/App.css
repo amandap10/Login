@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(rgba(128, 68, 109, 1), rgba(74, 58, 105, 1));
+  background: linear-gradient(rgb(128, 68, 109), rgba(74, 58, 105, 1));
 }
 
 h2 {
@@ -18,10 +18,42 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px
+  padding-top: 40px;
 }
 
 .container-one {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding-top: 50px;
+}
+
+.login {
+  height: 35px;
+  width: 300px;
+  padding-left: 10px;
+  border-radius: 6px;
+}
+
+.icon {
+  margin-right: 10px;
+  color: white;
+}
+
+.enter{
+  height: 100px;
+  width: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+}
+
+button {
+  width: 300px;
+  height: 35px;
+  border-radius: 6px;
+  background: #7b47889f;
+  color: white;
 }

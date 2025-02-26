@@ -21,15 +21,18 @@ const Login = () => {
         <div className="container-one">
             <FaUser className="icon"/>
             {/* Função "onChange" vai captar os dados preenchidos dos usuários a partir do momento que for inserido e enviado */}
-            <input type="email" placeholder='E-mail'
+            <input className="login" type="text" placeholder='Username'
             onChange={(e) => setUsername(e.target.value)}
             />
         </div>
         <div className="container-one">
             <FaLock className="icon"/>
-            <input type="password" placeholder='Senha' 
+            <input className="login" type="password" placeholder='Senha' 
             onChange={(e) => setPassword(e.target.value)}
             />
+        </div>
+        <div className="enter">
+          <button>LOGIN</button>
         </div>
         <div className="recall-forget">
             <label>
@@ -38,7 +41,7 @@ const Login = () => {
             </label>
             <a href="#">Esqueceu a senha?</a>
         </div>
-        <button>Entrar</button>
+        
 
         <div className="signup-link">
             <p>Não tem uma conta? <a href="#">Registrar</a></p>
