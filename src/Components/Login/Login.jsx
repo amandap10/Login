@@ -54,9 +54,10 @@ const Login = () => {
         <div className="signup-link">
             <p>Não tem uma conta? <a href="#">Registrar</a></p>
             <p>ou</p>
-            <div className="icon-google">
+            
+            <a className="icon-google" href="">            
               <img src={icon} alt="Logo Google" />
-            </div>
+            </a>
         </div>
       </form>
       
