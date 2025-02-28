@@ -1,11 +1,11 @@
 import { FaUser, FaLock } from "react-icons/fa"
 
-import './Login.css'
+import "/src/Components/Login/Login.css"
 import logo from '../../assets/logo.jpg'
 import icon from '../../assets/google.png'
 
 
-const Login = () => {
+function Login() {
 
 
   return (

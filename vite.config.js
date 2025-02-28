@@ -1,7 +1,17 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-})
+  css: {
+    devSourcemap: true,
+  },
+  base: "./",
+  server: {
+    port: 3000
+  },
+  build: {
+    outDir: "build", // Certifique-se de que está gerando para "build"
+    cssCodeSplit: false, // Isso evita que os arquivos CSS sejam fragmentados
+  }
+});
