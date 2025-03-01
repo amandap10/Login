@@ -1,4 +1,5 @@
 import { FaUser, FaLock } from "react-icons/fa"
+import { useNavigate } from "react-router-dom"
 
 import "/src/Components/Login/Login.css"
 import logo from '../../assets/logo.jpg'
@@ -6,6 +7,12 @@ import icon from '../../assets/google.png'
 
 
 function Login() {
+
+  const navigate = useNavigate(); //Hook para navegação
+  const handleLogin = () => {
+
+    navigate('/home');
+  }
 
 
   return (
@@ -27,7 +34,7 @@ function Login() {
           </div>
         </div>
         <div className="enter">
-          <button>LOGIN</button>
+          <button onClick={handleLogin}>LOGIN</button>
         </div>
         <div className="recall-forget">
             <label >
