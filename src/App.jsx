@@ -2,8 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import "./App.css"; // Importando o CSS global
 
-import Home from './Pages/Home.jsx';
-import Login from './Components/Login/Login'
+import Home from './page/Home.jsx'
+import Login from './page/Login.jsx'
 
 function App() {
   return (

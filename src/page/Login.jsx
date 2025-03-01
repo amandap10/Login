@@ -1,9 +1,10 @@
 import { FaUser, FaLock } from "react-icons/fa"
 import { useNavigate } from "react-router-dom"
 
-import "/src/Components/Login/Login.css"
-import logo from '../../assets/logo.jpg'
-import icon from '../../assets/google.png'
+import "../styles/Login.css";
+
+import logo from '/src/assets/logo.jpg'
+import icon from '/src/assets/google.png'
 
 
 function Login() {
@@ -25,7 +26,6 @@ function Login() {
         <div className="container-form">
           <div className="container-one">
               <FaUser className="icon"/>
-              {/* Função "onChange" vai captar os dados preenchidos dos usuários a partir do momento que for inserido e enviado */}
               <input className="login" type="text" placeholder='Username'/>
           </div>
           <div className="container-one">
