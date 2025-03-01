@@ -9,7 +9,7 @@ function Login() {
 
 
   return (
-    <>
+  <div className="app">
     <div className='container'>
       <form>
         <div className="container-logo">
@@ -54,7 +54,7 @@ function Login() {
     </div>
 
     <footer>&copy; 2025 <a href="https://comandolog.com.br/">Comando</a>. Todos os direitos reservados.</footer>
-    </>
+  </div>
   )
 }
 
