@@ -49,12 +49,11 @@ function Login() {
         <div className="signup-link">
             <p>Não tem uma conta? <a href="#">Registrar</a></p>
             <p>ou</p>
-
-            <a className="icon-google" href="">            
-              <img src={icon} alt="Logo Google" 
-                
-              />
+            <p>Acesse com o Google 
+            <a className="icon-google" href="">           
+              <img src={icon} alt="Logo Google" />
             </a>
+            </p>
         </div>
       </form>
       

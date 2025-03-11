@@ -81,6 +81,7 @@
   }
   
   a {
+
     color: rgba(0, 0, 0, 0.448);
   }
   .recall-forget {
@@ -119,13 +120,16 @@
   
   .signup-link p {
     margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .icon-google img {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20px;
-    width: 20px;
-    margin-top: 10px;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
   }
