@@ -6,7 +6,7 @@ import Home from './page/Home.jsx'
 import Login from './page/Login.jsx'
 import Room from './page/Room.jsx'
 
-function App() {
+export function App() {
   return (
     <Router>
       <Routes>
@@ -18,4 +18,3 @@ function App() {
   );
 }
 
-export default App;
