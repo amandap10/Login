@@ -1,5 +1,3 @@
-import "../styles/Home.css";
-
 import logo from '/src/assets/logo.jpg'
 
 function Home(){

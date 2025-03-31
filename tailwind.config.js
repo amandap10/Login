@@ -1,8 +1,7 @@
-// eslint-disable-next-line no-undef
+/ @type {import('tailwindcss').Config} */
 export const content = [
-  "./src/**/*.{js,ts,jsx,tsx}",
-  "./pages/**/*.{js,ts,jsx,tsx}",
-  "./components/**/*.{js,ts,jsx,tsx}"
+  "./index.html",
+  "./src/**/*.{js,ts,jsx,tsx}", // Garante que Tailwind analise todos os arquivos necessários
 ];
 export const theme = {
   extend: {},

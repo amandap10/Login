@@ -1,4 +1,4 @@
-.container {
+/*.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,12 +90,13 @@
     font-size: 15px;
     padding-bottom: 20px;
     display: flex;
-    justify-content: space-between; /* Ou space-around */
+    justify-content: space-between; /* Ou space-around
+
+  
     align-items: center;
     flex-direction: row;
     margin-left: 120px;
   }
-  
   .check {
     margin-right: 5px;
   }
@@ -133,3 +134,4 @@
     width: 30px;
     padding: 5px;
   }
+*/

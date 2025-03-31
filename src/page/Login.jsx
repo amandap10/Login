@@ -2,8 +2,6 @@ import { FaUser, FaLock } from "react-icons/fa"
 import { useNavigate } from "react-router-dom"
 
 
-import "../styles/Login.css";
-
 import logo from '/src/assets/logo.jpg'
 import icon from '/src/assets/google.png'
 
@@ -18,26 +16,26 @@ function Login() {
 
 
   return (
-  <div className="app">
-    <div className='container'>
-      <form>
-        <div className="container-logo">
+  <div className="">
+    <div className="">
+      <form className="">
+        <div className="">
           <img className="logo" src={logo} alt="Logo da empresa" />
         </div>
-        <div className="container-form">
-          <div className="container-one">
+        <div className="">
+          <div className="">
               <FaUser className="icon"/>
               <input className="login" type="text" placeholder='Username'/>
           </div>
-          <div className="container-one">
+          <div className="">
               <FaLock className="icon"/>
               <input className="login" type="password" placeholder='Senha' />
           </div>
         </div>
-        <div className="enter">
+        <div className="">
           <button onClick={handleLogin}>LOGIN</button>
         </div>
-        <div className="recall-forget">
+        <div className="">
             <label >
                 <input className="check" type="checkbox"/>
                 Lembre de mim?
@@ -45,13 +43,13 @@ function Login() {
             <a href="#">Esqueceu a senha?</a>
         </div>
         
-        <div className="line"></div>
+        <div className=""></div>
 
-        <div className="signup-link">
+        <div className="">
             <p>Não tem uma conta? <a href="#">Registrar</a></p>
             <p>ou</p>
             <p>Acesse com o Google 
-            <a className="icon-google" href="">           
+            <a className="" href="">           
               <img src={icon} alt="Logo Google" />
             </a>
             </p>
