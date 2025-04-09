@@ -17,20 +17,20 @@ function Login() {
 
 
   return (
-  <div className="h-screen bg-gradient-to-b from-[rgb(128,68,109)] to-[rgba(74,58,105,1)] flex flex-col justify-center items-center">
-    <div className="bg-fuchsia-400 h-96 w-64 flex justify-evenly items-center rounded-xl ">
-      <form className="">
-        <div className="">
-          <div className="">
-              <FaUser className="icon"/>
-              <input className="login" type="text" placeholder='Username'/>
+  <div className="w-screen h-screen bg-gradient-to-b from-[rgb(128,68,109)] to-[rgba(74,58,105,1)] flex flex-col justify-center items-center">
+    <div className="bg-white/10 backdrop-blur-md p-6 shadow-lg flex justify-evenly items-center rounded-xl ">
+      <form className="max-w-58">
+        <div className="py-9">
+          <div className="flex items-center py-5 rounded-xl">
+              <FaUser className="fill-white mr-2"/>
+              <input className="px-1 bg-white rounded-md w-60" type="text" placeholder='Username'/>
           </div>
-          <div className="">
-              <FaLock className="icon"/>
-              <input className="login" type="password" placeholder='Senha' />
+          <div className="flex items-center">
+              <FaLock className="fill-white mr-2"/>
+              <input className="px-1 bg-white rounded-md w-60" type="password" placeholder='Senha' />
           </div>
         </div>
-        <div className="">
+        <div className="flex justify-center bg-[#794b83] rounded-md border border-black">
           <button onClick={handleLogin}>LOGIN</button>
         </div>
         <div className="">
