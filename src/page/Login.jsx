@@ -1,9 +1,10 @@
+
 import { FaUser, FaLock } from "react-icons/fa"
 import { useNavigate } from "react-router-dom"
 
 
-import logo from '/src/assets/logo.jpg'
-import icon from '/src/assets/google.png'
+
+
 
 
 function Login() {
@@ -16,12 +17,9 @@ function Login() {
 
 
   return (
-  <div className="">
-    <div className="">
+  <div className="h-screen bg-gradient-to-b from-[rgb(128,68,109)] to-[rgba(74,58,105,1)] flex flex-col justify-center items-center">
+    <div className="bg-fuchsia-400 h-96 w-64 flex justify-evenly items-center rounded-xl ">
       <form className="">
-        <div className="">
-          <img className="logo" src={logo} alt="Logo da empresa" />
-        </div>
         <div className="">
           <div className="">
               <FaUser className="icon"/>
@@ -50,7 +48,7 @@ function Login() {
             <p>ou</p>
             <p>Acesse com o Google 
             <a className="" href="">           
-              <img src={icon} alt="Logo Google" />
+              <img alt="Logo Google" />
             </a>
             </p>
         </div>
@@ -58,7 +56,10 @@ function Login() {
       
     </div>
 
-    <footer>&copy; 2025 <a href="https://comandolog.com.br/">Comando</a>. Todos os direitos reservados.</footer>
+    <footer
+    className="items-end justify-center flex-row"
+    >
+      &copy; 2025. Todos os direitos reservados.</footer>
   </div>
   )
 }
