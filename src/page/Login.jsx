@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom"
 
 
 
+
 function Login() {
 
   const navigate = useNavigate(); //Hook para navegação
@@ -44,7 +45,7 @@ function Login() {
         <div className=""></div>
 
         <div className="">
-            <p>Não tem uma conta? <a href="#">Registrar</a></p>
+            <p>Não tem uma conta? <a href="">Registrar</a></p>
             <p>ou</p>
             <p>Acesse com o Google 
             <a className="" href="">           
