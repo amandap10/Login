@@ -34,17 +34,15 @@ function Login() {
         <div className="flex justify-center bg-[#ad77ab] rounded-md border border-black">
           <button onClick={handleLogin}>LOGIN</button>
         </div>
-        <div className="">
-            <label >
-                <input className="check" type="checkbox"/>
+        <div className="text-sm/7 mt-4">
+            <label className="mr-2">
+                <input className="check mr-2" type="checkbox"/>
                 Lembre de mim?
             </label>
             <a href="#">Esqueceu a senha?</a>
         </div>
-        
-        <div className=""></div>
 
-        <div className="">
+        <div className="text-sm/6">
             <p>Não tem uma conta? <a href="">Registrar</a></p>
             <p>ou</p>
             <p>Acesse com o Google 
@@ -58,7 +56,7 @@ function Login() {
     </div>
 
     <footer
-    className="items-end justify-center flex-row"
+    className="mt-14 text-sm"
     >
       &copy; 2025. Todos os direitos reservados.</footer>
   </div>
