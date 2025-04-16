@@ -13,7 +13,7 @@ function Login() {
   const navigate = useNavigate(); //Hook para navegação
   const handleLogin = () => {
 
-    navigate('/home');
+    navigate('/register');
   }
 
 
@@ -36,7 +36,7 @@ function Login() {
         </div>
         <div className="text-sm/7 mt-4">
             <label className="mr-2">
-                <input className="check mr-2" type="checkbox"/>
+                <input className="mr-2" type="checkbox"/>
                 Lembre de mim?
             </label>
             <a href="#">Esqueceu a senha?</a>
@@ -45,7 +45,8 @@ function Login() {
         <div className="w-full h-px bg-gray-300 mt-2"></div>
 
         <div className="text-sm/6 flex flex-col items-center justify-center mt-2">
-            <p>Não tem uma conta? <a href="">Registrar</a></p>
+            <p>Não tem uma conta? <a href="">Registre-se</a></p>
+            <p>ou</p>
             <p><a href="">Acesse com o Google</a></p> <FaGoogle className="-mr-40 -mt-5"/>
         </div>
       </form>
