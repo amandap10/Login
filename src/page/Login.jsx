@@ -3,15 +3,10 @@ import { FaUser, FaLock, FaGoogle } from "react-icons/fa"
 import { useNavigate } from "react-router-dom"
 
 
-
-
-
-
-
 function Login() {
 
   const navigate = useNavigate(); //Hook para navegação
-  const handleLogin = () => {
+  const handleregisterClick = () => {
 
     navigate('/register');
   }
@@ -32,7 +27,7 @@ function Login() {
           </div>
         </div>
         <div className="flex justify-center bg-[#ad77ab] rounded-md border border-black">
-          <button onClick={handleLogin}>LOGIN</button>
+          <button>LOGIN</button>
         </div>
         <div className="text-sm/7 mt-4">
             <label className="mr-2">
@@ -45,7 +40,7 @@ function Login() {
         <div className="w-full h-px bg-gray-300 mt-2"></div>
 
         <div className="text-sm/6 flex flex-col items-center justify-center mt-2">
-            <p>Não tem uma conta? <a href="">Registre-se</a></p>
+            <p>Não tem uma conta? <button onClick={handleregisterClick} className="text-gray-800 underline">Registre-se</button></p>
             <p>ou</p>
             <p><a href="">Acesse com o Google</a></p> <FaGoogle className="-mr-40 -mt-5"/>
         </div>
