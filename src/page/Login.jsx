@@ -1,5 +1,5 @@
 
-import { FaUser, FaLock } from "react-icons/fa"
+import { FaUser, FaLock, FaGoogle } from "react-icons/fa"
 import { useNavigate } from "react-router-dom"
 
 
@@ -42,14 +42,11 @@ function Login() {
             <a href="#">Esqueceu a senha?</a>
         </div>
 
-        <div className="text-sm/6">
+        <div className="w-full h-px bg-gray-300 mt-2"></div>
+
+        <div className="text-sm/6 flex flex-col items-center justify-center mt-2">
             <p>Não tem uma conta? <a href="">Registrar</a></p>
-            <p>ou</p>
-            <p>Acesse com o Google 
-            <a className="" href="">           
-              <img alt="Logo Google" />
-            </a>
-            </p>
+            <p><a href="">Acesse com o Google</a></p> <FaGoogle className="-mr-40 -mt-5"/>
         </div>
       </form>
       
