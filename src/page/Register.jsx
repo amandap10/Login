@@ -81,15 +81,12 @@ function Register() {
 								onChange={(e) => setPasswordConfirmed(e.target.value)}	
 							/>
 						</div>
-
 					
 					{error && ( // Mensagem de Erro
               		<p className="text-red-600 text-sm mt-1 ml-2">{error}</p> 
            		)}
 					
 					</div>
-
-					
 
 					<div className="text-sm/7 -mt-2">
             		<label className="mr-2">
