@@ -1,8 +1,9 @@
 
-function Home(){
+function Dashboard(){
     return(
         <div className="page-home">
             <header>
+               <h2>My App</h2>
                
             </header>
             <div className="">
@@ -12,4 +13,4 @@ function Home(){
     )
 }
 
-export default Home
+export default Dashboard

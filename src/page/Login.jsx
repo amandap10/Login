@@ -1,13 +1,30 @@
 
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { useState } from "react";
 import { FaUser, FaLock, FaGoogle } from "react-icons/fa"
 import { useNavigate } from "react-router-dom"
+import { auth } from "../services/firebase";
 
 
 function Login() {
 
   const navigate = useNavigate(); //Hook para navegação
-  const handleregisterClick = () => {
+  
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
+  const handleLogin = async(e) => {
+    e.preventDefault();
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
+      navigate('/dashboard'); // redireciona para a home
+    } catch(err) {
+      setError("Email ou senha inválidos");
+    }
+  };
+
+  const handleregisterClick = () => {
     navigate('/register');
   }
 
@@ -15,19 +32,32 @@ function Login() {
   return (
   <div className="w-screen h-screen bg-gradient-to-b from-[rgb(128,68,109)] flex flex-col justify-center items-center">
     <div className="bg-white/10 backdrop-blur-md p-6 shadow-lg flex justify-evenly items-center rounded-xl ">
-      <form className="max-w-58">
+      <form className="max-w-58" onSubmit={handleLogin}>
         <div className="py-9">
           <div className="flex items-center py-5 rounded-xl">
               <FaUser className="fill-white mr-2"/>
-              <input className="px-1 bg-white rounded-md w-60" type="text" placeholder='Username'/>
+              <input 
+                className="px-1 bg-white rounded-md w-60" 
+                type="email" 
+                placeholder='Email'
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
           </div>
           <div className="flex items-center">
               <FaLock className="fill-white mr-2"/>
-              <input className="px-1 bg-white rounded-md w-60" type="password" placeholder='Password' />
+              <input 
+                className="px-1 bg-white rounded-md w-60" 
+                type="password" 
+                placeholder='Password'
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
           </div>
+          {error && <p className="text-red-500 mt-2">{error}</p>}
         </div>
         <div className="flex justify-center bg-[#ad77ab] rounded-md border border-black">
-          <button>LOGIN</button>
+          <button type="submit">LOGIN</button>
         </div>
         <div className="text-sm/7 mt-4">
             <label className="mr-2">
