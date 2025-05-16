@@ -23,7 +23,7 @@ function Login() {
           </div>
           <div className="flex items-center">
               <FaLock className="fill-white mr-2"/>
-              <input className="px-1 bg-white rounded-md w-60" type="password" placeholder='Senha' />
+              <input className="px-1 bg-white rounded-md w-60" type="password" placeholder='Password' />
           </div>
         </div>
         <div className="flex justify-center bg-[#ad77ab] rounded-md border border-black">
