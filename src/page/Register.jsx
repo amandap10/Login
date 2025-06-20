@@ -46,7 +46,7 @@ function Register() {
 							<input 
 								className="px-2 bg-white rounded-md w-60" 
 								type="text" 
-								placeholder="Nome"
+								placeholder="Nome Completo"
 								value={name}
 								onChange={(e) => setName(e.target.value)}	
 							/>
@@ -71,6 +71,14 @@ function Register() {
 								onChange={(e) => setPassword(e.target.value)}	
 							/>
 						</div>
+						<div className="text-sm text-stone-800">
+							<p>A senha deve conter:</p>
+							<li>No minímo 8 caracteres</li>
+							<li>Pelo menos 1 letra maiuscúla</li>
+							<li>Pelo menos 1 letra minúscula</li>
+							<li>Pelo menos 1 número</li>
+							<li>Pelo menos 1 símbolo (ex: !@#%&*)</li>
+						</div>
 						<div className="flex items-center py-2">
 							<RiLockPasswordFill className="fill-white mr-2"/>
 							<input 
@@ -87,7 +95,9 @@ function Register() {
            		)}
 					
 					</div>
-
+					<div>
+						
+					</div>
 					<div className="text-sm/7 -mt-2">
             		<label className="mr-2">
                 		<input className="mr-2" type="checkbox"/>
